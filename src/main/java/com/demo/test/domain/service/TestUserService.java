@@ -6,17 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
-import com.demo.test.domain.model.TestUser;
-import com.demo.test.domain.repository.TestUserDao;
+import com.demo.test.domain.model.UserModel;
+import com.demo.test.domain.repository.UserModelDao;
 
 @Service
 public class TestUserService {
     
     @Autowired
-    TestUserDao testUserDao;
+    UserModelDao testUserDao;
 
-    public List<TestUser> selectById() {
-        List<TestUser> userList = null;
+    public List<UserModel> selectById() {
+        List<UserModel> userList = null;
 		try {
             userList = testUserDao.selectById();
         } catch (DataAccessException e) {

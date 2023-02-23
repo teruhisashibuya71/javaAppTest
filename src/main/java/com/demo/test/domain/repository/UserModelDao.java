@@ -7,10 +7,10 @@ import org.springframework.dao.DataAccessException;
 
 import org.springframework.stereotype.Repository;
 
-import com.demo.test.domain.model.TestUser;
+import com.demo.test.domain.model.UserModel;
 
 @Repository
-public interface TestUserDao {
+public interface UserModelDao {
     //全件数取得メソッド
-    public List<TestUser> selectById() throws DataAccessException;
+    public List<UserModel> selectById() throws DataAccessException;
 }

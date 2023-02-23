@@ -1,12 +1,12 @@
 package com.demo.test.domain.model;
 
-//Lombokgああってもimportは必要
+//Lombokがあってもimportは必要
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class TestUser {
+public class UserModel {
     //最低限のフィールドで作成
     private int id;
 	
